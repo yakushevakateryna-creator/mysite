@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta charset="windows-1251">
+    <title>Послуги</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a name="top"></a>
+    
+    <h1>Зворотний зв'язок та замовлення аналізу</h1>
+    
+    <div class="content-block">
+        <p>На цій сторінці ви можете залишити запит на проведення макроекономічного аналізу (наприклад, порівняння CPI), розробку скриптів моніторингу на Python або автоматизацію таблиць Excel.</p>
+        
+        <form action="mailto:your_email@example.com" method="post" name="orderForm">
+            
+            <div style="text-align: right; margin-bottom: 15px;">
+                <label>Швидкий пошук послуги: <input type="search" name="q" placeholder="Введіть ключове слово..."></label>
+                <input type="button" value="Шукати">
+            </div>
+
+            <fieldset>
+                <legend>Ваші контактні дані</legend>
+                
+                <label for="userName">Ім'я та Прізвище:</label>
+                <input type="text" name="userName" id="userName" size="30" maxlength="50" placeholder="Іванов Іван">
+                
+                <label for="userCode">Пароль доступу (для студентів ХНУ):</label>
+                <input type="password" name="userCode" id="userCode" size="20">
+                
+                <label>Ваш статус:
+                    <input type="text" name="status" value="Студент" readonly>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Деталі запиту</legend>
+                
+                <p><b>Оберіть основний напрямок (перемикачі):</b></p>
+                <label><input type="radio" name="serviceType" value="cpi" checked> Аналіз інфляції (CPI)</label><br>
+                <label><input type="radio" name="serviceType" value="excel"> Налаштування зведених таблиць Excel</label><br>
+                <label><input type="radio" name="serviceType" value="python"> Розробка скрипта Python (Telethon)</label><br>
+
+                <p><b>Додаткові опції (прапорці):</b></p>
+                <label><input type="checkbox" name="extra1" value="charts" checked> Побудова діаграм та графіків</label><br>
+                <label><input type="checkbox" name="extra2" value="translate"> Переклад матеріалів (англійська/німецька)</label><br>
+                <label><input type="checkbox" name="extra3" value="video"> Підготовка вертикального відео (CapCut)</label><br>
+
+                <p><b>Виберіть бажані теми (утримуйте Ctrl для множинного вибору):</b></p>
+                <select name="topics" size="4" multiple>
+                    <option value="mixed_economy" selected>Змішана економіка</option>
+                    <option value="micro">Мікроекономіка</option>
+                    <option value="macro">Макроекономіка</option>
+                    <option value="freedom_index">Рейтинг економічної свободи</option>
+                    <option value="ireland">Економіка Ірландії</option>
+                </select>
+
+                <label for="taskDesc"><b>Детальний опис завдання:</b></label><br>
+                <textarea name="taskDesc" id="taskDesc" cols="50" rows="5" placeholder="Опишіть тут ваші вимоги до курсової роботи чи аналізу..."></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Відправка даних</legend>
+                <input type="submit" value="Відправити запит">
+                <input type="reset" value="Очистити форму">
+                
+                <p>Або відправте за допомогою графічної кнопки:</p>
+                <input type="image" src="images/send.png" alt="Відправити" width="40" height="40">
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="content-block">
+        <h2 style="text-align: center;">Моя локація: ХНУ імені В.Н. Каразіна</h2>
+        <div class="informer-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.5516934898745!2d36.2255013157152!3d50.00096197941549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0c8bb256d0d%3A0xc3fec2eab7e7bc38!2sV.%20N.%20Karazin%20Kharkiv%20National%20University!5e0!3m2!1sen!2sua!4v1683908214815!5m2!1sen!2sua" width="600" height="450" style="border:0; max-width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    
+    <a href="index.html" class="nav-link">Повернутися на головну сторінку</a>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta charset="windows-1251">
+    <title>Головна сторінка</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script type="text/javascript">
+        function showGreeting() {
+            alert("Привііііітт");
+        }
+        
+        function showCurrentDate() {
+            var today = new Date();
+            var dateString = today.getDate() + "." + (today.getMonth() + 1) + "." + today.getFullYear();
+            document.getElementById("date-display").innerHTML = "Сьогоднішня дата: " + dateString;
+        }
+    </script>
+</head>
+<body onload="showCurrentDate()"> <a name="top"></a>
+    
+    <h1>Ласкаво просимо на мій сайт!</h1>
+    
+    <div class="content-block">
+        <p>Привіт! Мене звати <b>Катерина</b>. Мені 19 років.</p>
+        <p>Я студентка 1 курсу факультету <i>міжнародної економіки</i> Харківського національного університету імені В.Н. Каразіна.</p>
+        
+        <p id="date-display" style="text-align: center; font-weight: bold; color: #2980B9;"></p>
+        <button class="js-button" onclick="showGreeting()">Натисни</button>
+
+        <h3>Меню сайту:</h3>
+        <ul>
+            <li><a href="economist.html">Цікаві історі</a></li>
+            <li><a href="skills.html">Мої навички </a></li>
+            <li><a href="contact.html">Замовити послуги</a></li>
+        </ul>
+
+        <h3>Відеоматеріали</h3>
+<div class="video-container">
+    <p>Мій улюблений мультфільм:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/oDW9iGzT_FY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+        <h3>Моє місто</h3>
+        <p style="text-align: center;">Я хочу поділитися з вами фото свого рідного міста</p>
+        <div class="gallery">
+            <img id="img1" src="images/img1.jfif" alt="Моє місто">
+            <img id="img2" src="images/img2.png" alt="Моє місто">
+            <img id="img3" src="images/img3.jpg" alt="Моє місто">
+        </div>
+    </div>
+
+    <div class="site-footer">
+        <p>© 2026. Розроблено студентом ХНУ ім. В.Н. Каразіна: <b>Катериною</b>.</p>
+        <p>Телефон для зв'язку: +380111222333</p>
+        <p>
+            <a href="https://t.me/telegram" target="_blank">Telegram</a> | 
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </p>
+    </div>
+</body>
+</html>
